@@ -25,16 +25,11 @@ def rest_api():
     return jsonify({'Hello': 'World'})
 
 
-@routes.get('/down')
-def down():
-    return render_template('down.html')
-
-
 @routes.get('/create')
 def create_test_note():
     return test_create()
 
 
 @routes.get('/passgen')
-def pass_gen():
-    return render_template("passwrd.html")
+def passgen():
+    return render_template("password.html")
